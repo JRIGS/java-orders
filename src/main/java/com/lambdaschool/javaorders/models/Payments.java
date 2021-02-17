@@ -24,7 +24,9 @@ public class Payments
     private List<Orders> ordersList = new ArrayList<>();
 
     public Payments()
-    {}
+    {
+
+    }
 
     public Payments(String type)
     {

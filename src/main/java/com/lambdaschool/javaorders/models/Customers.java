@@ -27,7 +27,7 @@ public class Customers
     private double outstandingamt;
     private String phone;
 
-    @ManyToMany
+    @ManyToOne
     @JoinColumn(name = "agentcode", nullable = false)
     @JsonIgnoreProperties(value = "customers")
     private Agents agents;

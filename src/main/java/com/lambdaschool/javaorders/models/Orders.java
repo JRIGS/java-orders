@@ -17,8 +17,8 @@ public class Orders
     private double ordamount;
     private double advanceamount;
 
-    @ManyToMany
-    @JoinColumn(name = "custcode", nullable = false)
+    @ManyToOne
+    @JoinColumn(name = "customercode", nullable = false)
     @JsonIgnoreProperties(value = "orders")
     private Customers customers;
 

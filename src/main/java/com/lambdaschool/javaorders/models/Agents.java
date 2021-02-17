@@ -26,7 +26,6 @@ public class Agents
 
     public Agents()
     {
-
     }
 
     public Agents(
