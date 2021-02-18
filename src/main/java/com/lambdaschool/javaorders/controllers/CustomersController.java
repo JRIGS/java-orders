@@ -4,6 +4,7 @@ package com.lambdaschool.javaorders.controllers;
 import com.lambdaschool.javaorders.models.Customers;
 import com.lambdaschool.javaorders.services.CustomersService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,7 +28,7 @@ public class CustomersController
         return new ResponseEntity<>(myCustomers, HttpStatus.OK);
     }
 
-    // http://localhost:2021/customers/customer/31
+    // http://localhost:2019/customers/customer/31
     @GetMapping(value = "/customer/{id}", produces = {"application/json"})
     public ResponseEntity<?> listCustomersById(@PathVariable long id)
     {
@@ -35,7 +36,7 @@ public class CustomersController
         return new ResponseEntity<>(c, HttpStatus.OK);
     }
 
-    // http://localhost:2021/customers/namelike/jef
+    // http://localhost:2019/customers/namelike/jef
     @GetMapping(value = "/namelike/{queriedname}", produces = {"application/json"})
     public ResponseEntity<?> listAllCustomersQueriedName(@PathVariable String queriedname)
     {

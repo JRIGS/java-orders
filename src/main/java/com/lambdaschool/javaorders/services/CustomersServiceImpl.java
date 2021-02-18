@@ -33,6 +33,6 @@ public class CustomersServiceImpl implements CustomersService
     @Override
     public List<Customers> findByNameLike(String queriedname)
     {
-        return customersRepository.findCustomersByCustomernameContaining(queriedname);
+        return customersRepository.findCustomersByCustnameContaining(queriedname);
     }
 }
