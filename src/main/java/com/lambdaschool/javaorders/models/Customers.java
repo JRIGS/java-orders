@@ -12,14 +12,14 @@ public class Customers
 {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long customercode;
+    private long custcode;
 
     @Column(nullable = false)
-    private String customername;
+    private String custname;
 
-    private String customercity;
+    private String custcity;
     private String workingarea;
-    private String customercountry;
+    private String custcountry;
     private String grade;
     private double openingamt;
     private double receiveamt;
@@ -40,10 +40,10 @@ public class Customers
     {}
 
     public Customers(
-        String customername,
-        String customercity,
+        String custname,
+        String custcity,
         String workingarea,
-        String customercountry,
+        String custcountry,
         String grade,
         double openingamt,
         double receiveamt,
@@ -52,10 +52,10 @@ public class Customers
         String phone,
         Agents agents)
     {
-        this.customername = customername;
-        this.customercity = customercity;
+        this.custname = custname;
+        this.custcity = custcity;
         this.workingarea = workingarea;
-        this.customercountry = customercountry;
+        this.custcountry = custcountry;
         this.grade = grade;
         this.openingamt = openingamt;
         this.receiveamt = receiveamt;
@@ -65,34 +65,34 @@ public class Customers
         this.agents = agents;
     }
 
-    public long getCustomercode()
+    public long getCustcode()
     {
-        return customercode;
+        return custcode;
     }
 
-    public void setCustomercode(long customercode)
+    public void setCustcode(long custcode)
     {
-        this.customercode = customercode;
+        this.custcode = custcode;
     }
 
-    public String getCustomername()
+    public String getCustname()
     {
-        return customername;
+        return custname;
     }
 
-    public void setCustomername(String customername)
+    public void setCustname(String custname)
     {
-        this.customername = customername;
+        this.custname = custname;
     }
 
-    public String getCustomercity()
+    public String getCustcity()
     {
-        return customercity;
+        return custcity;
     }
 
-    public void setCustomercity(String customercity)
+    public void setCustcity(String custcity)
     {
-        this.customercity = customercity;
+        this.custcity = custcity;
     }
 
     public String getWorkingarea()
@@ -105,14 +105,14 @@ public class Customers
         this.workingarea = workingarea;
     }
 
-    public String getCustomercountry()
+    public String getCustcountry()
     {
-        return customercountry;
+        return custcountry;
     }
 
-    public void setCustomercountry(String customercountry)
+    public void setCustcountry(String custcountry)
     {
-        this.customercountry = customercountry;
+        this.custcountry = custcountry;
     }
 
     public String getGrade()
@@ -199,11 +199,11 @@ public class Customers
     public String toString()
     {
         return "Customers{" +
-            "customercode=" + customercode +
-            ", customername='" + customername + '\'' +
-            ", customercity='" + customercity + '\'' +
+            "custcode=" + custcode +
+            ", custname='" + custname + '\'' +
+            ", custcity='" + custcity + '\'' +
             ", workingarea='" + workingarea + '\'' +
-            ", customercountry='" + customercountry + '\'' +
+            ", custcountry='" + custcountry + '\'' +
             ", grade='" + grade + '\'' +
             ", openingamt=" + openingamt +
             ", receiveamt=" + receiveamt +

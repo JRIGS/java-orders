@@ -16,7 +16,7 @@ public class Agents
 
     private String agentname;
     private String workingarea;
-    private double commision;
+    private double commission;
     private String phone;
     private String country;
 
@@ -31,13 +31,13 @@ public class Agents
     public Agents(
         String agentname,
         String workingarea,
-        double commision,
+        double commission,
         String phone,
         String country)
     {
         this.agentname = agentname;
         this.workingarea = workingarea;
-        this.commision = commision;
+        this.commission = commission;
         this.phone = phone;
         this.country = country;
     }
@@ -72,14 +72,14 @@ public class Agents
         this.workingarea = workingarea;
     }
 
-    public double getCommision()
+    public double getCommission()
     {
-        return commision;
+        return commission;
     }
 
-    public void setCommision(double commision)
+    public void setCommission(double commission)
     {
-        this.commision = commision;
+        this.commission = commission;
     }
 
     public String getPhone()
@@ -119,7 +119,7 @@ public class Agents
             "agentcode=" + agentcode +
             ", agentname='" + agentname + '\'' +
             ", workingarea='" + workingarea + '\'' +
-            ", commision=" + commision +
+            ", commission=" + commission +
             ", phone='" + phone + '\'' +
             ", country='" + country + '\'' +
             ", customers=" + customers +
